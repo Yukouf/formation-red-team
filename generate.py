@@ -4,7 +4,7 @@
 from fpdf import FPDF
 import textwrap, os, datetime
 
-OUTDIR = "/root/formation-red-team"
+OUTDIR = os.path.dirname(os.path.abspath(__file__))
 
 FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
@@ -160,22 +160,13 @@ def build_pdf1():
     )
     pdf.note_box("L'AI Red Teaming n'est PAS du pentest classique avec des prompts. C'est une discipline à part entière.")
 
-    pdf.section_title("2", "Pourquoi c'est critique en 2026")
-    pdf.body("Plusieurs tendances rendent l'AI Red Teaming indispensable :")
-    pdf.bullet("2025-2026 : explosion des agents autonomes (Copilot Agent, Claude Code, ChatGPT Tasks, etc.)")
+    pdf.section_title("2", "Pourquoi c'est critique")
+    pdf.body("Plusieurs tendances augmentent la surface d'attaque des systèmes IA :")
+    pdf.bullet("Développement des agents autonomes (Copilot Agent, Claude Code, ChatGPT Tasks, etc.)")
     pdf.bullet("Des agents qui exécutent du code, accèdent à des fichiers, envoient des emails, gèrent des comptes")
     pdf.bullet("Chaque outil donné à un agent est une surface d'attaque potentielle")
     pdf.bullet("Les entreprises déploient des agents sans comprendre les risques (shadow AI)")
-    pdf.bullet("Régulations : AI Act européen (obligatoire pour 2026-2027), Executive Order 14110 (US)")
-    pdf.table(
-        ["Métrique", "2024", "2025", "2026 (proj.)"],
-        [
-            ["Incidents de sécurité IA", "~200", "~1 200", "~4 000+"],
-            ["CVEs liées aux LLMs", "45", "180+", "500+"],
-            ["Agents en production", "<10 000", "200 000+", "2M+"],
-            ["Offres emploi AI security", "~500", "~3 000", "~12 000"],
-        ]
-    )
+    pdf.bullet("Cadres de risque : AI Act européen, NIST AI RMF, OWASP LLM Top 10 et MITRE ATLAS")
 
     pdf.add_page()
     pdf.section_title("3", "Différence sécurité traditionnelle vs AI security")
