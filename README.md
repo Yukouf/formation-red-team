@@ -20,11 +20,10 @@
 ![Language](https://img.shields.io/badge/langage-Python_3.10+-blue?logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![PDF](https://img.shields.io/badge/output-PDF-red?logo=adobe-acrobat-reader)
-![Pages](https://img.shields.io/badge/pages-30+-orange)
 ![Langue](https://img.shields.io/badge/langue-Fran%C3%A7ais-white)
-![Status](https://img.shields.io/badge/status-production_ready-brightgreen)
+![Status](https://img.shields.io/badge/status-demo-brightgreen)
 
-**4 modules PDF · 30+ pages · 100% généré en Python · Zéro dépendance cloud**
+**4 modules PDF · 100% généré en Python · Zéro dépendance cloud · Contenu pédagogique à titre d'illustration**
 
 </div>
 
@@ -38,7 +37,7 @@ Imaginez : vous êtes en charge de la sécurité d'une entreprise qui vient de d
 
 C'est exactement le scénario que cette formation vous apprend à **comprendre, reproduire et empêcher**.
 
-**AI Red Teaming** est la discipline qui consiste à attaquer les intelligences artificielles pour trouver leurs failles avant les vrais attaquants. Avec l'explosion des agents autonomes (ChatGPT Tasks, Claude Code, Copilot Agent…), ce métier explose : **+400% d'offres d'emploi en AI Security entre 2024 et 2026**.
+**AI Red Teaming** est la discipline qui consiste à attaquer les intelligences artificielles pour trouver leurs failles avant les vrais attaquants. Avec l'explosion des agents autonomes (ChatGPT Tasks, Claude Code, Copilot Agent…), c'est une spécialité en pleine croissance.
 
 Cette formation vous donne tout le socle théorique et pratique pour vous lancer — que vous soyez pentester qui veut évoluer, étudiant en cybersécurité, ou développeur qui veut comprendre pourquoi son agent n'est pas aussi sûr qu'il le croit.
 
@@ -150,7 +149,6 @@ def guardrail_output(response: str) -> str:
 - **Zéro dépendance système** — pas besoin d'installer texlive (3+ Go) ou wkhtmltopdf
 - **PDFs purs en Python** — tout le contenu (texte, tableaux, blocs de code, notes) est géré par une classe sur mesure
 - **Pipeline reproductible** — `python generate.py` et c'est tout. Même résultat sur Mac, Linux, Windows.
-- **30 pages en <10 secondes** — pas de compilation lourde
 
 ### 🌳 Structure du projet
 
@@ -192,17 +190,6 @@ class RedTeamPDF(FPDF):
 - **Ingénieurs sécurité** qui doivent auditer des déploiements d'agents
 - **Développeurs LLM** qui veulent comprendre pourquoi leurs guardrails échouent
 - **CTO / RSSI** qui cherchent une vue d'ensemble avant de déployer des agents
-
-### 📊 Le marché en chiffres
-
-| Indicateur | 2024 | 2026 (proj.) |
-|------------|------|---------------|
-| Incidents sécurité IA | ~200 | ~4 000+ |
-| CVEs liées aux LLMs | 45 | 500+ |
-| Agents en production | <10 000 | 2M+ |
-| Offres AI Security | ~500 | ~12 000 |
-
-Source : extrapolation conservatrice basée sur les tendances NVD + MITRE ATLAS + LinkedIn.
 
 ### 🗺️ Roadmap
 
@@ -256,14 +243,6 @@ open index.html
 - **PDF Generation:** `fpdf2` — pure Python, no system dependencies
 - **Typography:** DejaVu Fonts — full Unicode support
 - **Portal:** Vanilla HTML/CSS — zero JavaScript required
-
-### 📊 Why this matters
-
-| Metric | 2024 | 2026 (proj.) |
-|--------|------|---------------|
-| AI security incidents | ~200 | ~4,000+ |
-| LLM-related CVEs | 45 | 500+ |
-| Agents in production | <10,000 | 2M+ |
 
 ---
 
