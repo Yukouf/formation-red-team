@@ -19,7 +19,6 @@
   <a href="README_fr.md">Français</a>
 </p>
 
-```
 
 <div align="center">
 
